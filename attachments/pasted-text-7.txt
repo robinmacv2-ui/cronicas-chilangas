@@ -1,0 +1,36 @@
+FASE 5: IDENTIDAD VISUAL.
+
+Desarrolla una identidad visual original para CRÓNICAS DE UN CHILANGO.
+
+REFERENCIAS DE ESTILO:
+
+- Composición dinámica de historieta.
+- Perspectivas urbanas expresivas.
+- Contrastes entre luz nocturna y espacios interiores.
+- Interfaz tecnológica integrada en la narrativa.
+- Animaciones breves para transiciones, descubrimientos y decisiones.
+- Humor visual basado en la vida cotidiana chilanga.
+
+No copies diseños, personajes, logotipos ni composiciones identificables de franquicias existentes.
+
+INTERFAZ:
+
+- Menú principal con identidad propia.
+- Tipografía legible.
+- Botones con estados normal, seleccionado y presionado.
+- Transiciones discretas.
+- Paneles con jerarquía visual.
+- Indicadores de misión y evidencia.
+- Efectos visuales que no interfieran con la lectura.
+
+PRESENTACIÓN:
+El prototipo debe parecer una demostración temprana de un videojuego en desarrollo, no una página web ni una colección de pantallas estáticas.
+
+Implementa primero los elementos que Godot pueda ejecutar realmente. Utiliza ilustraciones provisionales originales para fondos y personajes cuando sea necesario.
+
+No inventes capturas de gameplay. No presentes ilustraciones conceptuales como evidencia de que las mecánicas funcionan.
+
+Prepara un punto de entrada claro desde el menú y una transición funcional al primer capítulo.
+
+ENTREGABLE:
+Interfaz visualmente coherente, recursos organizados y lista de elementos provisionales que deban reemplazarse por arte definitivo.

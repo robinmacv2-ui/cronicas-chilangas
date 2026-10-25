@@ -1,0 +1,27 @@
+{
+  "disclaimer": "Mapa ficticio de la demo. No representa la red oficial del Metro de la Ciudad de México ni ninguna ruta real.",
+  "nodes": [
+    {
+      "id": "centro",
+      "name": "CENTRO",
+      "detail": "Fonda La Última Mesa. Estás aquí. Local inventado para el capítulo.",
+      "state": "actual"
+    },
+    {
+      "id": "atlalilco",
+      "name": "ATLALILCO",
+      "detail": "Nombrado por el mensaje y por un recorte sin procedencia. No está desbloqueado.",
+      "state": "bloqueado"
+    },
+    {
+      "id": "desconocido",
+      "name": "DESTINO DESCONOCIDO",
+      "detail": "El mensaje lo deja en blanco. No hay estación que mostrar.",
+      "state": "bloqueado"
+    }
+  ],
+  "links": [
+    { "from": "centro", "to": "atlalilco", "open": false, "label": "transbordo no verificado" },
+    { "from": "atlalilco", "to": "desconocido", "open": false, "label": "sin destino" }
+  ]
+}

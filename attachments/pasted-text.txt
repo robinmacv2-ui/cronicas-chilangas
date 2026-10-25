@@ -1,0 +1,37 @@
+PROYECTO: CRÓNICAS DE UN CHILANGO
+SUBTÍTULO: ROMEO-HYDRA: EL ÚLTIMO TRANSBORDO
+VERSIÓN: PROTOTIPO 0.1
+MOTOR: GODOT 4.x ESTABLE
+LENGUAJE: GDSCRIPT
+PLATAFORMA INICIAL: PC
+IDIOMA DEL JUEGO: ESPAÑOL
+
+ROL:
+Actúa como arquitecto de software, desarrollador sénior de videojuegos, diseñador de interfaces y director técnico. Debes construir un prototipo ejecutable, no solamente describir cómo hacerlo.
+
+CONCEPTO:
+Un chilango autodidacta de Iztapalapa aprende programación y desarrolla un sistema de gobernanza de inteligencia artificial. Mientras trabaja de noche en un restaurante ficticio del Centro Histórico, recibe un mensaje anómalo que lo conduce a una investigación por distintas estaciones del Metro.
+
+Un antagonista llamado DON ÚLTIMO manipula información, recuerdos y percepciones. El protagonista deberá investigar, resolver acertijos y decidir qué evidencias merecen confianza.
+
+TONO:
+Aventura narrativa, misterio tecnológico, humor mexicano, surrealismo urbano y drama humano. Identidad visual original, con composición dinámica de historieta y animación estilizada.
+
+REGLAS TÉCNICAS INNEGOCIABLES:
+
+1. Proyecto completamente local y autónomo.
+2. Prohibidas las API externas, los servidores remotos, la telemetría y las llamadas de red.
+3. No solicitar ni almacenar claves, tokens o credenciales.
+4. No conectar el juego al ROMEO-HYDRA real, GitHub, Google Drive ni otros servicios.
+5. La gobernanza será una simulación local independiente.
+6. ALLOW no significa ejecutar una acción.
+7. Una evidencia incompleta o contradictoria debe producir REVIEW, no aceptación automática.
+8. No presentar hashes, pruebas o registros locales como prueba absoluta de autenticidad.
+9. No inventar resultados de pruebas que no se hayan ejecutado.
+10. No copiar personajes, marcas, escenarios protegidos ni diseños reconocibles de otras franquicias.
+
+MÉTODO:
+Construye por fases pequeñas. Conserva los archivos existentes. Antes de modificar un archivo, inspecciona su contenido. No reemplaces el proyecto completo para corregir un error puntual.
+
+ENTREGA:
+Un videojuego ejecutable con interfaz navegable, una escena jugable inicial, una investigación sencilla y una decisión final. Informa claramente qué está implementado, qué está pendiente y qué has probado realmente.

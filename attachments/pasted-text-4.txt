@@ -1,0 +1,64 @@
+FASE 3: IMPLEMENTACIÓN NARRATIVA.
+
+Respeta esta biblia narrativa. No sustituyas el concepto por una historia genérica de superhéroes.
+
+PROTAGONISTA:
+Adulto chilango de aproximadamente 29 años, originario de Iztapalapa. Autodidacta, curioso y persistente. Aprende programación mientras intenta construir un sistema de gobernanza de IA. Tiene limitaciones, comete errores y debe revisar sus propias conclusiones.
+
+ANTAGONISTA:
+DON ÚLTIMO. Presentador teatral de apariencia extravagante, guantes blancos y máscara ilustrada con una sonrisa. Su poder narrativo consiste en manipular la presentación de la información, explotar contradicciones y obligar al protagonista a tomar decisiones con evidencia incompleta.
+
+No lo conviertas en un villano omnipotente. Sus afirmaciones también deben poder cuestionarse.
+
+AMBIENTACIÓN:
+Ciudad de México estilizada, con referencias a Iztapalapa, el Centro Histórico, puestos de comida, vida cotidiana y estaciones del Metro. Mantén una identidad cultural concreta y evita reducir la ciudad a clichés turísticos.
+
+CAPÍTULO 1: EL MENSAJE.
+
+ESCENA 1:
+El protagonista programa de noche en un restaurante ficticio del Centro Histórico.
+
+ESCENA 2:
+Su computadora muestra un mensaje inesperado:
+
+YOUR GOVERNANCE MODEL IS INCOMPLETE.
+
+WHAT HAPPENS WHEN THE SYSTEM THAT VERIFIES THE EVIDENCE IS ITSELF PART OF THE FAILURE?
+
+LAST TRAIN: 23:17
+ORIGIN: ATLALILCO
+DESTINATION: UNKNOWN
+
+ESCENA 3:
+El protagonista investiga tres elementos:
+A. Mensaje de origen desconocido.
+B. Registro local sin proceso emisor confirmado.
+C. Referencia a Atlalilco sin procedencia autenticada.
+
+ESCENA 4:
+Abre la Visión de Sistema. Esta función destaca relaciones, anomalías y contradicciones, pero no revela automáticamente la verdad.
+
+ESCENA 5:
+El protagonista debe elegir entre ACEPTAR, RECHAZAR o REVISAR.
+
+DECISIÓN NARRATIVA ESPERADA:
+REVIEW: origen no verificado.
+
+Si el jugador acepta, muestra por qué la evidencia no basta y permite reconsiderar. No ejecutes ninguna acción irreversible.
+
+CIERRE:
+DECISIÓN REGISTRADA: REVIEW
+ORIGEN NO VERIFICADO
+LA INVESTIGACIÓN CONTINÚA…
+
+HUMOR:
+Incluye diálogos mexicanos naturales, sin forzar chistes en todas las escenas. Reserva la voz de los pasajeros para dar personalidad a la ciudad.
+
+EJEMPLO:
+Voz del tren: «Por causas ajenas a nuestra voluntad, este tren continuará hacia un destino que no aparece en el mapa».
+Pasajero: «Pues mientras no me deje más lejos de donde voy, joven».
+Voz del tren: «Se recomienda conservar la calma».
+Pasajero: «Eso llevo haciendo desde 1987».
+
+ENTREGABLE:
+Capítulo jugable con inicio, exploración, interacción, tres evidencias, decisión y cierre. Los diálogos deben poder editarse sin modificar el código central.

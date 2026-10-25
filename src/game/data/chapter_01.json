@@ -1,0 +1,239 @@
+{
+  "id": "chapter_01",
+  "title": "Capítulo 1",
+  "name": "El mensaje",
+  "place": "Fonda La Última Mesa",
+  "placeNote": "Restaurante ficticio del Centro Histórico. No es un local real.",
+  "protagonist": {
+    "name": "Teo Almanza",
+    "age": 29,
+    "origin": "Iztapalapa",
+    "blurb": "Autodidacta. Trabaja de noche y escribe, en una libreta, un modelo de gobernanza para inteligencia artificial. Se equivoca y por eso revisa."
+  },
+  "antagonist": {
+    "name": "Don Último",
+    "blurb": "Presentador de carpa. Guantes blancos y máscara de lotería. No es omnipotente: acomoda la información y también puede ser cuestionado."
+  },
+  "problem": "¿Se acepta el mensaje como alerta verificada de gobernanza y se toma el transbordo de las 23:17?",
+  "messageLines": [
+    "YOUR GOVERNANCE MODEL IS INCOMPLETE.",
+    "WHAT HAPPENS WHEN THE SYSTEM THAT VERIFIES THE EVIDENCE IS ITSELF PART OF THE FAILURE?",
+    "LAST TRAIN: 23:17",
+    "ORIGIN: ATLALILCO",
+    "DESTINATION: UNKNOWN"
+  ],
+  "exitBlocked": "Si cruzo esa puerta ahora, estaría decidiendo con prisa. Me falta: {missing}.",
+  "ending": {
+    "kicker": "DECISIÓN REGISTRADA: REVIEW",
+    "line": "ORIGEN NO VERIFICADO",
+    "tail": "LA INVESTIGACIÓN CONTINÚA…"
+  },
+  "hotspots": [
+    { "id": "radio", "fx": 0.14, "fy": 0.62, "label": "Radio de la fonda", "hint": "Escuchar" },
+    { "id": "mensaje", "fx": 0.3, "fy": 0.46, "label": "Mensaje anómalo", "hint": "Leer el mensaje", "requires": "laptop_read" },
+    { "id": "laptop", "fx": 0.42, "fy": 0.58, "label": "Computadora portátil", "hint": "Revisar la portátil" },
+    { "id": "salida", "fx": 0.57, "fy": 0.52, "label": "Salida de la fonda", "hint": "Mirar la puerta" },
+    { "id": "registro", "fx": 0.73, "fy": 0.58, "label": "Registro local", "hint": "Consultar la bitácora" },
+    { "id": "atlalilco", "fx": 0.85, "fy": 0.48, "label": "Referencia a Atlalilco", "hint": "Examinar el recorte" }
+  ],
+  "inventory": [
+    {
+      "id": "gafete",
+      "name": "Gafete de La Última Mesa",
+      "description": "Turno de cierre. La fonda es ficticia; el turno doble, no tanto."
+    },
+    {
+      "id": "libreta",
+      "name": "Libreta de gobernanza",
+      "description": "Reglas a mano. La primera: ALLOW no significa ejecutar."
+    },
+    {
+      "id": "cable",
+      "name": "Cable de la portátil",
+      "description": "Solo alimenta esta máquina. No hay otro extremo."
+    }
+  ],
+  "evidences": [
+    {
+      "id": "mensaje",
+      "name": "Mensaje de origen desconocido",
+      "description": "Apareció en la portátil de la fonda. Dice que el modelo de gobernanza está incompleto, pregunta qué ocurre si quien verifica la evidencia forma parte de la falla, y anuncia un último tren: 23:17, origen Atlalilco, destino desconocido. No trae emisor.",
+      "observation": "El texto se puede leer. Eso no identifica a quien lo envió."
+    },
+    {
+      "id": "registro",
+      "name": "Registro local sin proceso emisor",
+      "description": "Bitácora guardada en la propia máquina. Anota una entrada a las 23:02 con el proceso emisor en «no confirmado». No dice quién escribió el mensaje.",
+      "observation": "Un archivo local puede registrar que algo apareció. No autentica la fuente."
+    },
+    {
+      "id": "atlalilco",
+      "name": "Referencia a Atlalilco sin procedencia",
+      "description": "Recorte en el corcho. Repite Atlalilco y las 23:17, y deja el destino en blanco. Sin sello, sin fuente y con letra que no es de Teo ni de doña Reme.",
+      "observation": "Nombrar una estación no autentica el dato. Después de la Visión de Sistema, el recorte contradice la idea de una ruta verificada: el mensaje declara destino desconocido y el papel no aporta procedencia."
+    }
+  ],
+  "objectives": [
+    { "id": "laptop", "label": "Revisar la computadora de la fonda", "flag": "laptop_read" },
+    { "id": "mensaje", "label": "Leer el mensaje anómalo", "evidence": "mensaje" },
+    { "id": "registro", "label": "Consultar el registro local", "evidence": "registro" },
+    { "id": "atlalilco", "label": "Examinar la referencia a Atlalilco", "evidence": "atlalilco" },
+    { "id": "vision", "label": "Abrir la Visión de Sistema", "flag": "vision_opened" },
+    { "id": "decision", "label": "Registrar una decisión fundamentada", "flag": "decision_final" }
+  ],
+  "dialogues": {
+    "laptop_1": {
+      "speaker": "Teo",
+      "text": "La plancha ya está fría. En el Centro bajan las cortinas y yo sigo en La Última Mesa, con la libreta abierta, porque el modelo de gobernanza no se cierra solo.",
+      "next": "laptop_2"
+    },
+    "laptop_2": {
+      "speaker": "Teo",
+      "text": "Si una evidencia no se puede verificar, el sistema no debería decir que sí. Eso sí lo tengo escrito. Lo demás me sigue ganando.",
+      "next": "laptop_3"
+    },
+    "laptop_3": {
+      "speaker": "Teo",
+      "text": "Espera. Esta ventana no la abrí yo.",
+      "action": "reveal_message"
+    },
+    "laptop_again": {
+      "speaker": "Teo",
+      "text": "La portátil sigue encendida. Mirarla otra vez no vuelve verdadero lo que hay en la pantalla."
+    },
+    "message_1": {
+      "speaker": "Pantalla",
+      "text": "YOUR GOVERNANCE MODEL IS INCOMPLETE.\n\nWHAT HAPPENS WHEN THE SYSTEM THAT VERIFIES THE EVIDENCE IS ITSELF PART OF THE FAILURE?\n\nLAST TRAIN: 23:17\nORIGIN: ATLALILCO\nDESTINATION: UNKNOWN",
+      "next": "message_2",
+      "action": "discover_mensaje"
+    },
+    "message_2": {
+      "speaker": "Teo",
+      "text": "Inglés de instructivo y un tren a las 23:17. Ni firma, ni proceso, ni una razón clara para creerle.",
+      "next": "message_3"
+    },
+    "message_3": {
+      "speaker": "Teo",
+      "text": "Atlalilco está en la ciudad. En esta pantalla, por ahora, solo está en una frase."
+    },
+    "message_again": {
+      "speaker": "Teo",
+      "text": "El texto no se movió. Sigue sin decir quién lo puso ahí."
+    },
+    "registro_1": {
+      "speaker": "Teo",
+      "text": "La bitácora vive en esta máquina. No sale de la fonda. Aquí anoto las pruebas del modelo, con hora y con duda.",
+      "next": "registro_2",
+      "action": "discover_registro"
+    },
+    "registro_2": {
+      "speaker": "Teo",
+      "text": "Hay una línea de las 23:02: entrada recibida. En proceso emisor escribí, o escribió alguien, «no confirmado».",
+      "next": "registro_3"
+    },
+    "registro_3": {
+      "speaker": "Teo",
+      "text": "Un registro puede decir que algo apareció. No dice quién lo empujó."
+    },
+    "registro_again": {
+      "speaker": "Teo",
+      "text": "Sigue igual: entrada sí, emisor no. Repetir la lectura no llena el hueco."
+    },
+    "atl_1": {
+      "speaker": "Teo",
+      "text": "En el corcho hay un recorte. Alguien apuntó Atlalilco, 23:17, y dejó el destino en blanco.",
+      "next": "atl_2",
+      "action": "discover_atlalilco"
+    },
+    "atl_2": {
+      "speaker": "Teo",
+      "text": "No trae sello ni fuente. La letra no es mía. Doña Reme escribe con plumón morado, y esto está en tinta negra.",
+      "next": "atl_3"
+    },
+    "atl_3": {
+      "speaker": "Teo",
+      "text": "Nombrar una estación no compra el boleto. Y un papel sin procedencia no es una orden."
+    },
+    "atl_again": {
+      "speaker": "Teo",
+      "text": "El recorte sigue en el corcho. Estar clavado ahí no lo vuelve una fuente."
+    },
+    "radio_1": {
+      "speaker": "Voz del tren",
+      "text": "Por causas ajenas a nuestra voluntad, este tren continuará hacia un destino que no aparece en el mapa.",
+      "next": "radio_2"
+    },
+    "radio_2": {
+      "speaker": "Pasajero",
+      "text": "Pues mientras no me deje más lejos de donde voy, joven.",
+      "next": "radio_3"
+    },
+    "radio_3": {
+      "speaker": "Voz del tren",
+      "text": "Se recomienda conservar la calma.",
+      "next": "radio_4"
+    },
+    "radio_4": {
+      "speaker": "Pasajero",
+      "text": "Eso llevo haciendo desde 1987.",
+      "next": "radio_5"
+    },
+    "radio_5": {
+      "speaker": "Teo",
+      "text": "La radio de la fonda agarró una frecuencia que no debería. Puede ser interferencia. También puedo estar oyéndome el susto.",
+      "action": "heard_radio"
+    },
+    "radio_again": {
+      "speaker": "Teo",
+      "text": "Sigue la misma frecuencia. Repetirla no la hace oficial."
+    },
+    "vision_empty": {
+      "speaker": "Teo",
+      "text": "La Visión de Sistema no inventa pistas. Primero tengo que mirar algo de verdad."
+    },
+    "vision_1": {
+      "speaker": "Don Último",
+      "text": "Qué puntual. Abriste la cortina justo cuando el tablero se puso incómodo.",
+      "next": "vision_2"
+    },
+    "vision_2": {
+      "speaker": "Teo",
+      "text": "Eso no está en mi código. ¿Quién habla?",
+      "next": "vision_3"
+    },
+    "vision_3": {
+      "speaker": "Don Último",
+      "text": "Don Último, para servirte. Yo no firmo por ti. Acomodo lo que se alcanza a ver. El permiso, si algún día existe, tendría que ponerlo tu sistema. Y tu sistema, hoy, está incompleto.",
+      "choices": [
+        { "label": "No voy a firmar con esto.", "next": "vision_no" },
+        { "label": "Si puedes acomodarlo, también puedo desconfiar de ti.", "next": "vision_doubt" }
+      ]
+    },
+    "vision_no": {
+      "speaker": "Don Último",
+      "text": "Entonces mira las relaciones, no el espectáculo. Una línea entre dos papeles no es una verdad.",
+      "action": "open_vision"
+    },
+    "vision_doubt": {
+      "speaker": "Don Último",
+      "text": "Correcto. Mis frases también se revisan. Si yo fuera prueba suficiente, tu modelo ya habría fracasado.",
+      "action": "open_vision"
+    },
+    "exit_ready": {
+      "speaker": "Teo",
+      "text": "Ya vi lo que hay en la fonda. Si concluyo, que sea con la compuerta, no con el impulso. Nada de esto sale de la máquina.",
+      "choices": [
+        { "label": "Abrir el panel de decisión", "action": "decision" },
+        { "label": "Seguir mirando", "action": "close" }
+      ]
+    },
+    "after_accept": {
+      "speaker": "Teo",
+      "text": "Quise aceptarlo y la compuerta no alcanzó. Menos mal. Aceptar una pantalla no enciende ningún tren."
+    },
+    "after_reject": {
+      "speaker": "Teo",
+      "text": "Tirarlo a la basura también sería decidir de más. Que no esté verificado no lo vuelve mentira. Todavía no."
+    }
+  }
+}

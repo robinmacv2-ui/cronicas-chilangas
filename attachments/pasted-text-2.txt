@@ -1,0 +1,80 @@
+FASE 1: ESQUELETO VISUAL DEL VIDEOJUEGO.
+
+Trabaja sobre el proyecto Godot existente. Si está vacío, inicialízalo. No desarrolles todavía el juego completo.
+
+OBJETIVO:
+Crear una interfaz funcional que permita navegar por todas las pantallas principales mediante botones reales.
+
+DISEÑA ESTAS PANTALLAS:
+
+1. MENÚ PRINCIPAL
+
+- Título: CRÓNICAS DE UN CHILANGO.
+- Subtítulo: ROMEO-HYDRA: EL ÚLTIMO TRANSBORDO.
+- Botones: Nueva partida, Continuar, Opciones y Créditos.
+- Fondo provisional inspirado en una estación nocturna del Metro.
+- Nueva partida inicia el capítulo 1.
+- Continuar carga una partida si existe; de lo contrario, informa que no hay partida guardada.
+- Opciones abre un panel funcional.
+- Créditos muestra información del proyecto.
+
+2. PANTALLA DE JUEGO
+
+- Área central para el escenario.
+- Personaje controlable.
+- Indicador de capítulo y objetivo actual.
+- Botón para abrir el inventario.
+- Botón para consultar evidencias.
+- Botón para abrir el mapa.
+- Botón para pausar.
+- Panel de diálogo que aparece cuando corresponde.
+
+3. PANEL DE EVIDENCIAS
+
+- Lista de evidencias descubiertas.
+- Nombre, descripción y estado de cada evidencia.
+- Estados: PENDIENTE, OBSERVADA, INCOMPLETA y CONTRADICTORIA.
+- Ninguna evidencia debe considerarse auténtica únicamente por aparecer en la lista.
+
+4. MAPA
+
+- Tres nodos iniciales: CENTRO, ATLALILCO y DESTINO DESCONOCIDO.
+- Mostrar conexiones y destinos bloqueados.
+- Identificarlo expresamente como mapa ficticio de la demo, no como representación oficial de la red del Metro.
+
+5. PANEL DE DECISIÓN
+
+- Mostrar el problema investigado.
+- Mostrar las evidencias disponibles.
+- Opciones: ACEPTAR, RECHAZAR y REVISAR.
+- Mostrar las consecuencias narrativas sin ejecutar acciones externas.
+- Permitir regresar y reconsiderar antes de confirmar.
+
+6. PAUSA
+
+- Reanudar.
+- Opciones.
+- Volver al menú, previa confirmación.
+- Guardar partida.
+
+REQUISITOS VISUALES:
+Resolución de referencia: 1280 × 720.
+Diseño adaptable a otras resoluciones.
+Interfaz legible, jerarquía visual clara, botones identificables y paneles consistentes.
+Estética de historieta urbana, con iluminación nocturna, colores expresivos y detalles inspirados en la CDMX.
+Utiliza recursos provisionales originales cuando falten ilustraciones. No bloquees el desarrollo por falta de arte definitivo.
+
+REQUISITOS FUNCIONALES:
+
+- Todos los botones deben responder.
+- Ningún panel debe quedar permanentemente bloqueado.
+- Debe existir una forma clara de regresar.
+- Evita ventanas superpuestas sin control.
+- Los cambios de pantalla deben conservar el estado necesario de la partida.
+- No uses enlaces web ni contenido remoto para decorar la interfaz.
+
+ENTREGABLES:
+Proyecto Godot ejecutable, escenas organizadas, scripts separados y lista de controles.
+
+Al terminar, ejecuta el proyecto y comprueba cada botón y transición. Informa qué pruebas se ejecutaron y cuáles no.
+No avances a la siguiente fase hasta que el esqueleto de interfaz sea navegable.

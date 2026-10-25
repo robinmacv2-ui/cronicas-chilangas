@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@import "@fontsource/archivo-black/400.css";
+@import "@fontsource/literata/400.css";
+@import "@fontsource/literata/700.css";
+
+@theme {
+  --color-ink: #141820;
+  --color-night: #0e1624;
+  --color-navy: #1b3148;
+  --color-paper: #f4ebd8;
+  --color-amber: #e8a23a;
+  --color-cyan: #2bb8c4;
+  --color-coral: #e25b45;
+  --color-muted: #b7c3c8;
+  --font-display: "Archivo Black", "Arial Black", sans-serif;
+  --font-body: "Literata", "Liberation Serif", serif;
+  --radius-panel: 1.25rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-night);
+    color: var(--color-paper);
+    font-family: var(--font-body);
+  }
+}
+
+.game-root {
+  height: 100dvh;
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-night);
+  color: var(--color-paper);
+  position: relative;
+}
+
+.stage-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+}
+
+.comic-btn {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  border: 3px solid var(--color-ink);
+  box-shadow: 4px 4px 0 var(--color-ink);
+  border-radius: 0.7rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 1rem;
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.comic-btn:hover,
+.comic-btn:focus-visible {
+  background: var(--color-amber);
+  transform: translate(-1px, -1px);
+  box-shadow: 6px 6px 0 var(--color-ink);
+}
+
+.comic-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 var(--color-ink);
+}
+
+.comic-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.comic-btn-ghost {
+  background: transparent;
+  color: var(--color-paper);
+  border-color: var(--color-paper);
+  box-shadow: 4px 4px 0 var(--color-navy);
+}
+
+.comic-btn-cyan {
+  background: var(--color-cyan);
+}
+
+.comic-btn-coral {
+  background: var(--color-coral);
+  color: var(--color-paper);
+}
+
+.panel-card {
+  background: color-mix(in srgb, var(--color-night) 94%, white);
+  color: var(--color-paper);
+  border: 3px solid var(--color-amber);
+  border-radius: var(--radius-panel);
+  box-shadow: 8px 8px 0 var(--color-ink);
+}
+
+.hud-chip {
+  background: color-mix(in srgb, var(--color-night) 88%, transparent);
+  border: 2px solid var(--color-paper);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+}
+
+.scrim {
+  background: color-mix(in srgb, var(--color-night) 72%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .comic-btn {
+    transition: none;
+  }
+}

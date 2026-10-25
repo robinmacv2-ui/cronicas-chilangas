@@ -1,0 +1,44 @@
+FASE 4: HACER JUGABLE EL CAPÍTULO 1.
+
+Implementa las siguientes mecánicas sobre las escenas existentes:
+
+1. Movimiento lateral del protagonista en un escenario 2D.
+2. Controles de teclado configurables.
+3. Interacción contextual con objetos cercanos.
+4. Indicador visual cuando un objeto admite interacción.
+5. Diálogos con avance controlado por el jugador.
+6. Registro de evidencias mediante interacciones.
+7. Panel de evidencias actualizado en tiempo real.
+8. Visión de Sistema que resalte pistas sin revelar la solución.
+9. Decisión final con tres opciones.
+10. Pantalla de cierre y opción de reiniciar.
+
+OBJETOS INTERACTIVOS:
+
+- Computadora portátil.
+- Mensaje anómalo.
+- Registro local.
+- Referencia a Atlalilco.
+- Salida del restaurante.
+
+PROGRESIÓN:
+El jugador no puede emitir una conclusión fundamentada antes de consultar las evidencias necesarias. Puede explorar en distinto orden, siempre que el resultado final dependa de la información realmente descubierta.
+
+No uses combates ni inventes sistemas complejos que no contribuyan a esta primera experiencia.
+
+DURACIÓN OBJETIVO:
+Entre 5 y 10 minutos como meta de diseño, no como resultado garantizado.
+
+CRITERIOS:
+
+- Se puede iniciar y terminar el capítulo.
+- El jugador no puede atravesar paredes de forma involuntaria.
+- Las interacciones no se repiten de manera destructiva.
+- Los diálogos no bloquean permanentemente el movimiento.
+- El panel de evidencias refleja el progreso real.
+- El final aparece una sola vez por recorrido.
+- Reiniciar devuelve el capítulo a su estado inicial.
+
+Utiliza recursos provisionales cuando falten animaciones. No simules funcionalidades terminadas mediante botones decorativos.
+
+Al finalizar, registra los problemas encontrados y las correcciones aplicadas.

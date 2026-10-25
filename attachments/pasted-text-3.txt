@@ -1,0 +1,75 @@
+FASE 2: ARQUITECTURA DEL PROTOTIPO.
+
+Inspecciona el proyecto existente. Conserva lo que funcione y reorganiza solamente cuando sea necesario.
+
+ESTRUCTURA OBJETIVO:
+
+res://
+project.godot
+scenes/
+main_menu.tscn
+game.tscn
+chapter_01.tscn
+metro_map.tscn
+ui/
+dialogue_panel.tscn
+evidence_panel.tscn
+decision_panel.tscn
+pause_menu.tscn
+scripts/
+game_manager.gd
+player_controller.gd
+dialogue_manager.gd
+evidence_manager.gd
+mission_manager.gd
+metro_map.gd
+evidence_gate.gd
+save_manager.gd
+data/
+chapter_01.json
+metro_demo.json
+tests/
+acceptance_test_plan.md
+docs/
+architecture.md
+build_status.md
+
+Puedes ajustar la estructura si existe una razón técnica concreta. No crees archivos vacíos solamente para aparentar avance.
+
+RESPONSABILIDADES:
+
+- game_manager.gd: coordinar estados generales y cambios de escena.
+- player_controller.gd: movimiento e interacción del personaje.
+- dialogue_manager.gd: diálogos y opciones narrativas.
+- evidence_manager.gd: registrar y consultar evidencias.
+- mission_manager.gd: objetivos, progreso y desbloqueos.
+- metro_map.gd: navegación por el mapa ficticio.
+- evidence_gate.gd: evaluar si una decisión narrativa está suficientemente respaldada.
+- save_manager.gd: guardar y recuperar el progreso localmente.
+
+GOBERNANZA NARRATIVA:
+Implementa tres resultados:
+ALLOW: los requisitos definidos se cumplen.
+DENY: una regla explícita impide aceptar la propuesta.
+REVIEW: faltan datos, existen contradicciones o no se puede verificar una condición.
+
+La evaluación no debe ejecutar acciones del sistema operativo, controlar procesos externos ni comunicarse con otros servicios.
+
+El mensaje inicial debe terminar en REVIEW porque su origen no está verificado.
+
+AISLAMIENTO:
+No incorporar SDK de analítica, servicios de autenticación remota, publicidad, llamadas HTTP, telemetría ni dependencias de ejecución innecesarias.
+No ejecutar comandos del sistema desde el juego.
+No solicitar permisos innecesarios.
+Los archivos de guardado deben permanecer en el almacenamiento local de Godot.
+Los datos narrativos deben poder editarse sin modificar la lógica central.
+
+ROBUSTEZ:
+Valida los archivos JSON al cargarlos.
+Gestiona los datos ausentes sin bloquear el juego.
+Evita duplicar evidencias.
+Evita que una misión se complete varias veces por una misma interacción.
+No confundas un estado visual con una autorización real.
+
+ENTREGABLE:
+Implementa los módulos, conecta las escenas y documenta las dependencias internas. Comprueba que el juego inicia sin errores y que los módulos funcionan sin conexión a Internet.
